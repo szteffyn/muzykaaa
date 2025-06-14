@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gatunki Muzyczne</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: #fff;
+      background: #000022;
+    }
+    h1 {
+      color: #ffcc5b;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      background: #222244;
+      padding: 15px 25px;
+      border-radius: 15px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    nav button {
+      background-color: #ffcc5b;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: #000022;
+    }
+    nav button:hover {
+      background-color: #e6b84c;
+    }
+
+    /* Nowa sekcja o muzyce */
+    #o-muzyce {
+      background-image: url('https://www.cleveland.com/resizer/iX-17fSQ-aO7KH-dVjT9n64ixIo=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/expo.advance.net/img/960b45d730/width2048/57e_collage1.jpeg');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 75px 75px 75px;
+      border-radius: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 20px rgba(255, 204, 91, 0.7);
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+    }
+    #o-muzyce h2 {
+      color: #ffcc5b;
+      margin-bottom: 25px;
+      font-size: 2.5em;
+    }
+    #o-muzyce p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      max-width: 900px;
+    }
+
+    section {
+      background: #111133;
+      padding: 40px 75px 75px 75px;
+      margin-bottom: 20px;
+      border-radius: 100px;
+      clear: both;
+    }
+    section h2 {
+      color: #ffcc5b;
+      margin-bottom: 30px;
+    }
+    section p {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 0.9em;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .album-image {
+      float: left;
+      margin-right: 20px;
+      width: 100px;
+      height: 100px;
+      background: #fff;
+    }
+  </style>
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <button onclick="scrollToSection('o-muzyce')">O muzyce</button>
+    <button onclick="scrollToSection('hip-hop')">Hip-Hop</button>
+    <button onclick="scrollToSection('pop')">Pop</button>
+    <button onclick="scrollToSection('indie')">Indie</button>
+    <button onclick="scrollToSection('chip-tune')">Chip Tune</button>
+    <button onclick="scrollToSection('rnb')">R&B</button>
+  </nav>
+
+  <h1>Gatunki Muzyczne</h1>
+
+  <section id="o-muzyce">
+    <h2>Czym jest muzyka?</h2>
+    <p>
+      Muzyka to uniwersalny język, który przekracza granice kulturowe i czasowe, łącząc ludzi na całym świecie. 
+      To nie tylko dźwięki i rytmy, ale także emocje, wspomnienia i historie, które potrafią poruszyć duszę.
+      Od najprostszych melodii po złożone kompozycje – muzyka to sztuka wyrażania tego, co niewypowiedziane słowami. 
+      Każdy gatunek muzyczny opowiada swoją unikalną historię i pozwala słuchaczowi na podróż przez różne nastroje i klimaty.
+      Dzięki muzyce celebrujemy radość, łagodzimy smutek, inspirujemy się do działania i odnajdujemy spokój.
+    </p>
+    <p>
+      W erze cyfrowej muzyka stała się łatwiej dostępna niż kiedykolwiek wcześniej, umożliwiając odkrywanie nowych dźwięków i artystów. 
+      Bez względu na to, czy słuchasz na żywo, czy przez słuchawki, muzyka pozostaje jednym z najpotężniejszych środków wyrazu ludzkiego ducha.
+    </p>
+  </section>
+
+  <section id="hip-hop">
+    <h2>Hip-Hop</h2>
+    <p>Charakteryzuje się mocnym beatem, tekstami pełnymi świadomości, autentyczności i odwagi w wyrażaniu opinii. Kendrick Lamar w swoim albumie To Pimp a Butterfly pokazuje pełnię artystycznego kunsztu, dotykając tematów nierówności, sprawiedliwości czy tożsamości.</p>
+    <img
+      src="https://i.discogs.com/WVggDWoAUvBbt3cfLJfLSIXwfzIgNcn6MUKv8oaLboE/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3Nzc4/MDczLTE2NDg0MjUx/MTAtMzg0Ni5qcGVn.jpeg"
+      alt="Okładka albumu"
+      class="album-image"
+    />
+    <ul>
+      <li>
+        Artysta: Kendrick Lamar — Album: To Pimp a Butterfly
+        (<a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP?si=v0r_u8R-QRS5UU5ds28jbA" target="_blank" rel="noopener noreferrer">Posłuchaj na Spotify</a>)
+      </li>
+    </ul>
+  </section>
+
+  <section id="pop">
+    <h2>Pop</h2>
+    <p>To lekkie, chwytliwe piosenki nastawione na rozrywkę, które trafiają do wielu słuchaczy. Doo-Wops & Hooligans od Bruno Marsa łączy soulful wokal, ballady i radiowe przeboje, tworząc album pełen pozytywnej energii.</p>
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/I/71Ni-RHs37L._AC_SL1434_.jpg"
+      alt="Okładka albumu"
+      class="album-image"
+    />
+    <ul>
+      <li>
+        Artysta: Bruno Mars — Album: Doo-Wops & Hooligans
+        (<a href="https://open.spotify.com/album/6J84szYCnMfzEcvIcfWMFL?si=_8EwjRBZQnedh8qxj44J7g" target="_blank" rel="noopener noreferrer">Posłuchaj na Spotify</a>)
+      </li>
+    </ul>
+  </section>
+
+  <section id="indie">
+    <h2>Indie</h2>
+    <p>Odznacza się oryginalnością, kreatywnością i autorskimi tekstami, często wypływającymi z osobistych przeżyć artysty. This Old Dog od Mac DeMarco odzwierciedla jego refleksje, troski i doświadczenia, tworząc intymny portret artystyczny.</p>
+    <img
+      src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e6/d6/ed/e6d6eda8-501c-4e26-6973-ba50ac5a4878/817949013172.jpg/1200x1200bf-60.jpg"
+      alt="Okładka albumu"
+      class="album-image"
+    />
+    <ul>
+      <li>
+        Artysta: Mac DeMarco — Album: This Old Dog
+        (<a href="https://open.spotify.com/album/4NNq2vwTapv4fSJcrZbPH7?si=i_xXMrJWT9K0RRgXHCUtaw" target="_blank" rel="noopener noreferrer">Posłuchaj na Spotify</a>)
+      </li>
+    </ul>
+  </section>
+
+  <section id="chip-tune">
+    <h2>Chip Tune</h2>
+    <p>To gatunek pełen dźwięków 8-bitowych, które budzą nostalgię i przenoszą nas w świat gier wideo. Undertale Soundtrack od Toby Fox tworzy atmosferę pełną emocji, idealnie uzupełniając fabułę gry.</p>
+    <img
+      src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d3/21/9f/d3219f8b-c2ff-2498-0e87-eb57873b6eca/841787181533.png/1200x1200bf-60.jpg"
+      alt="Okładka albumu"
+      class="album-image"
+    />
+    <ul>
+      <li>
+        Artysta: Toby Fox — Album: Undertale Soundtrack
+        (<a href="https://open.spotify.com/album/2M2Ae2SvZe3fmzUtlVOV5Z?si=lMTWFl10RAmqowA6BCBcSA" target="_blank" rel="noopener noreferrer">Posłuchaj na Spotify</a>)
+      </li>
+    </ul>
+  </section>
+
+  <section id="rnb">
+    <h2>R&B</h2>
+    <p>To soulful, emocjonalny gatunek o gładkim brzmieniu. SOS od SZA pokazuje wrażliwość, siłę i samorealizowanie się artystki, poruszając tematy samopoznania, relacji i troski o samą siebie.</p>
+    <img
+      src="https://ratedrnb.com/cdn/2022/12/sza-sos-album-cover-ratedrnb-scaled.jpg"
+      alt="Okładka albumu"
+      class="album-image"
+    />
+    <ul>
+      <li>
+        Artysta: SZA — Album: SOS
+        (<a href="https://open.spotify.com/album/0mX15Qy1qkdA6Sn6EhZ6s8?si=YHcXTffUQCqFctDyx9ILNQ" target="_blank" rel="noopener noreferrer">Posłuchaj na Spotify</a>)
+      </li>
+    </ul>
+  </section>
+
+</body>
+</html>
